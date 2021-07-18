@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/stilos.css">
-
+  <script src="js/validar.js"></script>
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
 </head>
@@ -46,8 +46,7 @@
         </div>
         <form method="POST" class="form" action="#">
           <input id="email" type="text" name="Email" size="20" value="" placeholder=" Email Address" required>
-          <input id="botton" type="image" value="" name="Submit">
-          <button class="botton"><img src="images/icon-arrow.svg" alt=""></button>
+          <button class="botton" onclick="validarcorreo(form.email.value)"><img src="images/icon-arrow.svg" alt=""></button>
         </form>
       </div>
       <div class="figure__desktop">
