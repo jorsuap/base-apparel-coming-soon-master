@@ -13,12 +13,14 @@ body {
     width: 100%;
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
-.cardsoon__logo{
+
+.cardsoon__logo {
     margin-top: 50px;
 }
+
 .cardsoon_seccion-text {
     box-sizing: border-box;
-    width: 62%;
+    width: 55%;
     background-image: url(../images/bg-pattern-desktop.svg);
     background-repeat: repeat;
     background-size: cover;
@@ -29,7 +31,6 @@ body {
 }
 
 .cardsoon__tittle {
-  
     font-size: 5em;
     font-weight: 600;
     text-transform: uppercase;
@@ -37,7 +38,7 @@ body {
     letter-spacing: 20px;
     padding-top: 100px;
     margin-bottom: 30px;
-    color:hsl(0, 6%, 24%);
+    color: hsl(0, 6%, 24%);
 }
 
 .cardsoon__tittle-colored {
@@ -55,7 +56,7 @@ body {
 }
 
 .figure__desktop {
-    width: 38%;
+    width: 45%;
     height: 100vh;
     position: relative;
 
@@ -75,35 +76,40 @@ body {
     border-radius: 35px;
     border: solid 1px hsl(0, 36%, 70%);
     background-color: transparent;
-    color: hsl(0, 6%, 24%);
     font-weight: 600;
     font-size: 1em;
-    
 }
-.error{
+
+.email::placeholder {
+    color: hsla(0, 36%, 70%, .5);
+}
+
+.error {
     background: url(../images/icon-error.svg) no-repeat scroll 400px 16px;
     border: solid 2px hsl(0, 93%, 68%);
-} 
+}
 
-#email::placeholder {
-    color:  hsla(0, 36%, 70%, .5);
+#email {
+    color: hsl(0, 6%, 24%);
     font-size: 1.1em;
-    letter-spacing: 2px;
     font-family: 'Josefin Sans', sans-serif;
 }
 
 .text-error {
     display: none;
     color: hsl(0, 93%, 68%);
-    padding-left: 30px;
+    padding-left: 20px;
 }
-.active{
+
+.active {
     display: block;
 }
-.form{
+
+.form {
     position: relative;
     margin-bottom: 10px;
 }
+
 .botton {
     position: absolute;
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
@@ -124,4 +130,113 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/*MEDIAS QUERY*/
+
+@media (min-width:1440px) {
+    .cardsoon_seccion-text {
+        width: 62%;
+    }
+
+    .figure__desktop {
+        width: 38%;
+    }
+}
+
+@media (max-height:850px) {
+    .cardsoon__tittle {
+        padding-top: 10px;
+    }
+}
+
+@media(max-width:1024px) {
+    .cardsoon__tittle {
+        font-size: 4em;
+        line-height: 70px;
+        letter-spacing: 15px;
+    }
+
+    .extracto {
+        max-width: 400px;
+    }
+
+    .email {
+        width: 300px;
+    }
+}
+@media(max-width:800px) {
+    .cardsoon_seccion-text {
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin-bottom: 70px;
+    }
+    .figure__desktop {
+        display: none;
+    }
+
+    .cardsoon__logo {
+        margin: 30px 30px;
+    }
+    
+    .figure__mobile{
+        position: relative;
+        width: 375px;
+        height: 250px;
+    }
+    .imagen__mobile{
+        position: absolute;
+        background: url(../images/hero-mobile.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .cardsoon__text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cardsoon__tittle {
+        font-size: 2.5em;
+        line-height: 45px;
+        letter-spacing: 15px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .extracto {
+        box-sizing: border-box;
+        max-width: 340px;
+        text-align: center;
+        font-size: 0.9em;
+        line-height: 23px;
+        letter-spacing: 0px;
+        padding:  0 10px;
+        margin-bottom: 30px;
+    }
+
+    .email {
+        width: 270px;
+        padding: 15px;
+    }
+    #email {
+        font-size: .9em;
+    }
+    .botton {
+        right: 30px;
+        padding: 12px;
+        width: 65px;
+        
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9em;
+    }
+    .text-error {
+        padding-left: 65px;
+    }
 }

@@ -41,13 +41,12 @@
               <span class="cardsoon__tittle-colored"> We're <br></span> coming <br> soon
             </h1>
             <p class="extracto">
-              Hello fellow shoppers! We're currently building our new fashion store.
-              Add your email below to stay up-to-date with announcements and our launch deals.
+              Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
             </p>
           </div>
-          <form class="form">
-            <input id="email" class="email" type="text" name="Email" size="20" value="" placeholder=" Email Address" src="images/icon-error.svg">
-            <button class="botton" onclick="validarcorreo(form.email.value)"><img src="images/icon-arrow.svg"
+          <form method="GET" class="form">
+            <input id="email" class="email" type="text" name="email" size="20" placeholder="Email Address" src="images/icon-error.svg">
+            <button class="botton" type="submit" onclick="validarcorreo(form.email.value)"><img src="images/icon-arrow.svg"
                 alt=""></button>
           </form>
           <span  id="alert" class="text-error">Please provide a valid email</span>
