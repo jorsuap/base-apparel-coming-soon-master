@@ -145,11 +145,7 @@ body {
     }
 }
 
-@media (max-height:850px) {
-    .cardsoon__tittle {
-        padding-top: 10px;
-    }
-}
+
 
 @media(max-width:1024px) {
     .cardsoon__tittle {
@@ -165,7 +161,19 @@ body {
     .email {
         width: 300px;
     }
+    .error {
+        background: url(../images/icon-error.svg) no-repeat scroll 260px 16px;
+        border: solid 2px hsl(0, 93%, 68%);
+    }
 }
+
+@media (max-height:850px) {
+    .cardsoon__tittle {
+        padding-top: 10px;
+    }
+    
+}
+
 @media(max-width:800px) {
     .cardsoon_seccion-text {
         width: 100%;
@@ -240,5 +248,9 @@ body {
     .text-error {
         padding-left: 55px;
         font-size: .9em;
+    }
+    .error {
+        background: url(../images/icon-error.svg) no-repeat scroll 210px 10px;
+        border: solid 2px hsl(0, 93%, 68%);
     }
 }
